@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+<title>Kopia Interfejsu</title>
+<style type="text/tailwindcss">
+@layer components {
+.footer-link { @apply hover:text-white cursor-pointer transition-colors; }
+.social-btn { @apply w-8 h-8 bg-white rounded flex items-center justify-center text-black font-black text-[10px] cursor-pointer hover:bg-gray-200; }
+.action-btn { @apply bg-red-600 text-white px-4 py-3 rounded-full text-base font-black hover:bg-red-700 w-64 mx-auto mt-auto flex justify-center items-center; }
+.nav-top-link { @apply hover:text-red-600 cursor-pointer transition-colors; }
+.nav-main-link { @apply hover:text-red-600 cursor-pointer transition-colors flex items-center gap-1; }
+}
+</style>
+</head>
+<body class="bg-white font-sans text-gray-900 antialiased">
+
+<header class="w-full bg-white shadow-2xl sticky top-0 z-50">
+<div class="max-w-7xl mx-auto flex flex-col py-1 px-4">
+<div class="flex justify-end gap-6 text-[11px] text-gray-500 font-semibold mb-1">
+<span class="nav-top-link">Nasze sklepy</span>
+<span class="nav-top-link">Dostawa do domu</span>
+<span class="nav-top-link">Newsletter</span>
+<span class="nav-top-link">Praca w Biedronce</span>
+</div>
+<div class="flex justify-between items-center mt-1">
+<div class="w-12 h-12 md:w-48 md:h-16 bg-yellow-400 border-2 border-red-600 rounded-full flex items-center justify-center font-black text-red-600 text-xl relative shrink-0">
+<div class="md:absolute md:-left-2 md:top-0 w-10 h-10 md:w-12 md:h-12 bg-white rounded-full border-2 border-black flex items-center justify-center text-[8px] md:text-[10px] font-bold">LOGO</div>
+<span class="hidden md:block">Biedronka</span>
+</div>
+<nav class="flex items-center justify-center gap-4 md:gap-6 text-[13px] font-bold text-gray-800 flex-grow md:flex-grow-0 px-2">
+<a class="nav-main-link">
+<span class="material-symbols-outlined text-2xl block md:hidden">local_offer</span>
+<span class="hidden md:block">NOWA OFERTA</span>
+</a>
+<a class="text-red-600 cursor-pointer flex items-center gap-1">
+<span class="material-symbols-outlined text-2xl block md:hidden">menu_book</span>
+<span class="hidden md:block">GAZETKI</span>
+</a>
+<a class="nav-main-link">
+<span class="material-symbols-outlined text-2xl block md:hidden">inventory_2</span>
+<span class="hidden md:block">ARTYKUŁY PRZEMYSŁOWE</span>
+</a>
+<a class="nav-main-link">
+<span class="material-symbols-outlined text-2xl block md:hidden">storefront</span>
+<span class="hidden md:flex items-center gap-1">NASZE MARKI <svg class="w-3 h-3 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></span>
+</a>
+<a class="nav-main-link">
+<span class="material-symbols-outlined text-2xl block md:hidden">credit_card</span>
+<span class="hidden md:flex items-center gap-1">MOJA BIEDRONKA <svg class="w-3 h-3 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></span>
+</a>
+</nav>
+<div class="flex items-center gap-4 md:gap-6 shrink-0">
+<div class="hidden md:block font-black text-xl tracking-tighter leading-none text-center">
+Biedronka<br><span class="text-teal-400 text-lg font-serif italic font-normal">home</span>
+</div>
+<div class="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center cursor-pointer hover:bg-red-700 transition-colors">
+<svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+</div>
+</div>
+</div>
+</div>
+</header>
+
+<main class="max-w-5xl mx-auto px-4 py-6 flex flex-col gap-8">
+
+<div class="w-full bg-red-600 text-white rounded-lg p-10 flex flex-col md:flex-row justify-between items-center min-h-[460px] relative overflow-hidden gap-8 md:gap-0">
+<div class="z-10 w-full md:w-1/2 text-center md:text-left">
+<div class="bg-yellow-400 text-red-700 font-black text-2xl inline-block p-2 rounded transform -rotate-3 mb-4">SUPERCENA</div>
+<h1 class="text-4xl md:text-5xl font-black mb-2">KUP 6 ZAPŁAĆ ZA 3</h1>
+<div class="w-full h-56 bg-red-800 rounded-lg opacity-50 flex items-center justify-center text-sm font-bold mt-4">PLACEHOLDER ZDJĘCIA MLEKA</div>
+</div>
+<div class="z-10 w-full md:w-1/3 bg-yellow-400 text-red-700 p-8 rounded-lg text-center transform md:rotate-2 flex flex-col">
+<div class="text-base font-black mb-1">TYLKO Z KARTĄ</div>
+<div class="text-7xl font-black mb-2">1,49</div>
+<div class="text-sm font-bold mb-6">CENA ZA 1 SZT PRZY ZAKUPIE 6 SZT</div>
+<button class="action-btn">ZOBACZ WIĘCEJ</button>
+</div>
+</div>
+
+<div class="w-full bg-yellow-400 p-6 rounded-lg flex flex-col md:flex-row items-center justify-center border-2 border-red-600 gap-2 md:gap-0 min-h-[96px]">
+<div class="bg-red-600 text-white font-black px-4 py-2 rounded md:mr-4">NOWOŚĆ</div>
+<div class="font-black text-2xl text-red-700 text-center">CODZIENNIE OSZCZĘDZAJ WIĘCEJ W BIEDRONCE</div>
+</div>
+
+<div class="w-full bg-black text-white rounded-lg p-8 flex flex-col md:flex-row justify-between items-center min-h-[196px] gap-6 md:gap-0">
+<div class="flex items-center gap-6">
+<div class="w-20 h-10 bg-gray-800 flex items-center justify-center font-bold text-sm shrink-0">LOGO</div>
+<div class="text-2xl md:text-4xl font-black text-blue-400 text-center md:text-left">KUP ONLINE <span class="text-white text-lg md:text-2xl block mt-2">NA HOME.BIEDRONKA.PL</span></div>
+</div>
+<div class="w-full md:w-64 h-32 md:h-full bg-gray-800 rounded flex items-center justify-center text-sm font-bold text-gray-500">FRYTKOWNICA GARNKI</div>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="md:col-span-2 border-2 border-gray-100 rounded-lg p-8 flex flex-col relative overflow-hidden min-h-[400px]">
+<div class="absolute top-0 left-0 bg-black text-white font-black px-6 py-2 text-sm z-10 w-full md:w-auto">OD PONIEDZIAŁKU DO ŚRODY</div>
+<div class="flex flex-col md:flex-row gap-6 mt-12 w-full flex-grow">
+<div class="w-full md:w-1/2 flex flex-col relative">
+<div class="absolute top-0 left-0 bg-yellow-400 text-red-700 font-black px-3 py-1 text-sm rounded z-10">1+1 GRATIS</div>
+<div class="w-full h-48 bg-gray-100 rounded mb-4 flex items-center justify-center text-sm text-gray-400 font-bold mt-4">PLACEHOLDER POMIDORY</div>
+<div class="bg-red-600 px-2 py-2 text-center font-black text-white text-4xl rounded mb-4">6,99</div>
+</div>
+<div class="w-full md:w-1/2 flex flex-col relative">
+<div class="absolute top-0 right-0 bg-yellow-400 text-black font-black px-3 py-1 text-sm rounded z-10">28% TANIEJ</div>
+<div class="w-full h-48 bg-gray-100 rounded mb-4 flex items-center justify-center text-sm text-gray-400 font-bold mt-4">PLACEHOLDER MIĘSO</div>
+<div class="bg-red-600 px-2 py-2 text-center font-black text-white text-4xl rounded mb-4">14,99</div>
+</div>
+</div>
+<button class="action-btn mt-6">ZOBACZ WIĘCEJ</button>
+</div>
+<div class="border-2 border-gray-100 rounded-lg p-8 flex flex-col relative overflow-hidden min-h-[400px]">
+<div class="absolute top-0 left-0 bg-black text-white font-black px-6 py-2 text-sm z-10 w-full text-center">OD CZWARTKU</div>
+<div class="absolute top-14 left-4 bg-yellow-400 text-red-700 font-black px-3 py-1 text-sm rounded z-10">SUPERCENA</div>
+<div class="w-full h-48 bg-gray-100 rounded mb-4 flex items-center justify-center text-sm text-gray-400 font-bold mt-16">PLACEHOLDER SEREK</div>
+<div class="bg-yellow-400 px-2 py-2 text-center font-black text-red-700 text-4xl rounded mb-4">13,99</div>
+<button class="action-btn mt-6">ZOBACZ WIĘCEJ</button>
+</div>
+</div>
+
+<div class="flex items-center w-full mt-12 mb-8">
+<div class="flex-grow border-t border-gray-200"></div>
+<h2 class="px-6 text-center font-black text-3xl tracking-wide">POSTAW NA ŚWIEŻOŚĆ</h2>
+<div class="flex-grow border-t border-gray-200"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-pink-50 border border-pink-200 rounded-lg p-8 flex flex-col justify-between h-[420px]">
+<div class="bg-pink-600 text-white font-black px-4 py-2 text-base self-start mb-4">WYŁĄCZNIE W SKLEPIE</div>
+<div class="w-full flex-grow bg-pink-100 rounded mb-4 flex items-center justify-center text-sm text-pink-400 font-bold">PLACEHOLDER MIĘSO 2</div>
+<div class="bg-yellow-400 px-4 py-2 text-center font-black text-red-700 text-5xl rounded border-2 border-red-600">7,99</div>
+</div>
+<div class="bg-blue-50 border border-blue-200 rounded-lg p-8 flex flex-col justify-between h-[420px]">
+<div class="bg-blue-500 text-white font-black px-4 py-2 text-base self-start mb-4">RYBNY PONIEDZIAŁEK</div>
+<div class="w-full flex-grow bg-blue-100 rounded mb-4 flex items-center justify-center text-sm text-blue-400 font-bold">PLACEHOLDER ŁOSOŚ</div>
+<div class="bg-yellow-400 px-4 py-2 text-center font-black text-red-700 text-5xl rounded border-2 border-red-600">6,99</div>
+</div>
+<div class="bg-green-50 border border-green-200 rounded-lg p-8 flex flex-col justify-between h-[420px]">
+<div class="bg-green-500 text-white font-black px-4 py-2 text-base self-start mb-4">ŚWIEŻE OWOCE I WARZYWA</div>
+<div class="w-full flex-grow bg-green-100 rounded mb-4 flex items-center justify-center text-sm text-green-400 font-bold">PLACEHOLDER KIWI</div>
+<div class="bg-yellow-400 px-4 py-2 text-center font-black text-red-700 text-5xl rounded border-2 border-red-600">1,99</div>
+</div>
+</div>
+
+<div class="flex items-center w-full mt-14 mb-8">
+<div class="flex-grow border-t border-gray-200"></div>
+<h2 class="px-6 text-center font-black text-3xl tracking-wide">NAJLEPSZE OKAZJE TYGODNIA</h2>
+<div class="flex-grow border-t border-gray-200"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-4 md:px-12">
+<div class="flex flex-col items-center">
+<div class="bg-black text-white text-sm font-bold px-4 py-2 mb-3">OD PONIEDZIAŁKU</div>
+<div class="w-full h-[350px] bg-gray-200 rounded shadow-md border border-gray-300 flex items-center justify-center text-base font-bold text-gray-500 mb-6">PLACEHOLDER GAZETKA 1</div>
+<button class="action-btn">ZOBACZ WIĘCEJ</button>
+</div>
+<div class="flex flex-col items-center">
+<div class="bg-black text-white text-sm font-bold px-4 py-2 mb-3">OD CZWARTKU</div>
+<div class="w-full h-[350px] bg-gray-200 rounded shadow-md border border-gray-300 flex items-center justify-center text-base font-bold text-gray-500 mb-6">PLACEHOLDER GAZETKA 2</div>
+<button class="action-btn">ZOBACZ WIĘCEJ</button>
+</div>
+<div class="flex flex-col items-center">
+<div class="bg-black text-white text-sm font-bold px-4 py-2 mb-3">OD PONIEDZIAŁKU</div>
+<div class="w-full h-[350px] bg-gray-200 rounded shadow-md border border-gray-300 flex items-center justify-center text-base font-bold text-gray-500 mb-6">PLACEHOLDER GAZETKA 3</div>
+<button class="action-btn">ZOBACZ WIĘCEJ</button>
+</div>
+</div>
+<div class="flex justify-center mt-8">
+<button class="bg-[#e41e26] text-white font-black py-3 px-8 rounded-full flex items-center justify-center">WSZYSTKIE GAZETKI <span class="material-symbols-outlined text-sm inline-block align-middle ml-2">open_in_new</span></button>
+</div>
+
+<div class="border border-black text-sm leading-relaxed text-justify p-6 bg-white my-10 text-black font-bold flex items-start gap-4 shadow-sm">
+<span class="material-symbols-outlined text-2xl mt-1 shrink-0 text-black">info</span>
+<div>
+Informacja handlowa Podane ceny obowiązują w wybranych sklepach Promocje z aplikacją lub kartą lojalnościową obowiązują wyłącznie dla zarejestrowanych użytkowników Pełny regulamin promocji, listy sklepów i warunki ofert dostępne są na stronie internetowej w zakładkach prawnych Oferta ważna do wyczerpania zapasów
+</div>
+</div>
+
+<div class="flex items-center w-full mt-10 mb-8">
+<div class="flex-grow border-t border-gray-200"></div>
+<h2 class="px-6 text-center font-black text-3xl tracking-wide">KUP ONLINE W SKLEPIE BIEDRONKA HOME</h2>
+<div class="flex-grow border-t border-gray-200"></div>
+</div>
+
+<div class="w-full bg-green-600 text-white rounded-lg p-12 md:p-14 flex flex-col justify-center items-center text-center relative overflow-hidden min-h-[385px]">
+<div class="absolute inset-0 opacity-20 flex items-center justify-center">
+<div class="text-9xl">🌿</div>
+</div>
+<div class="z-10">
+<div class="text-yellow-300 font-bold mb-2 text-xl">Z kodem</div>
+<div class="text-6xl md:text-8xl font-black mb-8 tracking-tighter">WIOSNA26</div>
+<div class="flex flex-wrap justify-center gap-4 md:gap-8 font-black text-2xl md:text-3xl">
+<div class="bg-green-700 px-6 py-3 rounded-lg">120 ZŁ</div>
+<div class="bg-green-700 px-6 py-3 rounded-lg">70 ZŁ</div>
+<div class="bg-green-700 px-6 py-3 rounded-lg">40 ZŁ</div>
+</div>
+</div>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+<div class="bg-gray-100 rounded-lg h-80 p-8 relative flex flex-col border border-gray-200">
+<div class="bg-blue-500 text-white px-4 py-2 font-black text-base self-start rounded mb-2">-20%</div>
+<div class="bg-blue-600 text-white px-5 py-3 font-black text-3xl self-start rounded">3499</div>
+<div class="mt-auto self-end text-sm font-bold bg-white px-4 py-2 rounded">PLACEHOLDER ROBOT</div>
+</div>
+<div class="bg-gray-100 rounded-lg h-80 p-8 relative flex flex-col border border-gray-200">
+<div class="bg-blue-500 text-white px-4 py-2 font-black text-base self-start rounded mb-2">-50%</div>
+<div class="bg-blue-600 text-white px-5 py-3 font-black text-3xl self-start rounded">299</div>
+<div class="mt-auto self-end text-sm font-bold bg-white px-4 py-2 rounded">PLACEHOLDER BIEŻNIA</div>
+</div>
+</div>
+<div class="flex justify-center mt-8">
+<button class="bg-[#00a7b5] text-white font-black py-4 w-72 rounded-full hover:bg-teal-600 text-base md:text-lg flex justify-center items-center">KUP NA BIEDRONKA HOME</button>
+</div>
+
+<div class="flex items-center w-full mt-14 mb-8">
+<div class="flex-grow border-t border-gray-200"></div>
+<h2 class="px-6 text-center font-black text-3xl tracking-wide">SPECJALNE OFERTY ONLINE</h2>
+<div class="flex-grow border-t border-gray-200"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-gray-100 h-72 rounded-lg relative p-6 border border-gray-200 flex flex-col">
+<div class="bg-blue-500 text-white px-3 py-1 font-black text-sm self-start rounded mb-2">-30%</div>
+<div class="bg-blue-600 text-white px-3 py-2 font-black text-xl self-start rounded">119</div>
+<div class="mt-auto self-center text-sm font-bold bg-white px-4 py-2 rounded">PLACEHOLDER PLECAK</div>
+</div>
+<div class="bg-gray-100 h-72 rounded-lg relative p-6 border border-gray-200 flex flex-col">
+<div class="bg-blue-500 text-white px-3 py-1 font-black text-sm self-start rounded mb-2">-44%</div>
+<div class="bg-blue-600 text-white px-3 py-2 font-black text-xl self-start rounded">49</div>
+<div class="mt-auto self-center text-sm font-bold bg-white px-4 py-2 rounded">PLACEHOLDER LODÓWKA</div>
+</div>
+<div class="bg-gray-100 h-72 rounded-lg relative p-6 border border-gray-200 flex flex-col">
+<div class="bg-blue-500 text-white px-3 py-1 font-black text-sm self-start rounded mb-2">-40%</div>
+<div class="bg-blue-600 text-white px-3 py-2 font-black text-xl self-start rounded">299</div>
+<div class="mt-auto self-center text-sm font-bold bg-white px-4 py-2 rounded">PLACEHOLDER MIKSER</div>
+</div>
+</div>
+<div class="flex justify-center mt-8">
+<button class="bg-[#00a7b5] text-white font-black py-4 w-72 rounded-full hover:bg-teal-600 text-base md:text-lg flex justify-center items-center">KUP NA BIEDRONKA HOME</button>
+</div>
+
+<div class="flex flex-col gap-6 mt-14">
+<div class="w-full border-2 border-red-600 p-6 rounded flex flex-col md:flex-row items-center justify-center gap-4 bg-red-50 text-center md:text-left min-h-[110px]">
+<div class="w-16 h-16 rounded-full border border-red-600 flex items-center justify-center text-sm font-bold text-red-600 shrink-0">LOGO</div>
+<div class="font-black text-red-700 tracking-wider text-lg md:text-2xl">JESTEŚ LIDEREM RYNKU 2026 WYBIERA NAS WIĘKSZOŚĆ</div>
+</div>
+<div class="w-full bg-[#fcefee] border p-8 rounded-lg flex flex-col md:flex-row justify-between items-center shadow-sm gap-6 md:gap-0 min-h-[140px]">
+<div class="font-black text-2xl text-center md:text-left">ZAKUPY<br><span class="text-lg font-normal">Z BIEDRONKI PROSTO DO DOMU!</span></div>
+<div class="flex gap-8 font-black text-4xl text-green-500 items-center">
+<span>Glovo</span>
+<span class="text-sm text-black">LOGO<br>BIEDRONKA</span>
+</div>
+<button class="bg-[#da2028] text-white px-10 py-4 rounded-full text-lg font-black">SPRAWDŹ</button>
+</div>
+<div class="w-full bg-teal-600 text-white min-h-[160px] py-8 rounded-lg flex flex-col md:flex-row items-center justify-between px-8 md:px-12 relative overflow-hidden gap-4 md:gap-0">
+<div class="absolute inset-0 bg-teal-700 opacity-20">PLACEHOLDER DZIECKO</div>
+<div class="font-black text-5xl z-10 italic">Dada</div>
+<div class="z-10 font-bold text-center md:text-left text-lg md:text-xl">Delikatne i chłonne pieluszki Sprawdź asortyment</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-6">
+<div class="bg-red-600 h-72 rounded flex flex-col items-center justify-center text-white p-8 relative">
+<div class="w-24 h-24 bg-black rounded-full absolute top-4 right-4 flex items-center justify-center text-base font-bold">TO MY.</div>
+<div class="font-black text-3xl mb-4 text-center leading-tight mt-4">Sprawdź nasze<br>oferty pracy na</div>
+<div class="text-base font-bold text-yellow-400 mb-6">www.pracawbiedronce.pl</div>
+<button class="bg-yellow-400 text-black px-6 py-3 rounded-full text-sm font-black">Dowiedz się więcej!</button>
+</div>
+<div class="bg-red-600 h-72 rounded flex flex-col items-center justify-center text-white p-8 relative">
+<div class="bg-black text-white text-sm font-black px-4 py-2 mb-4 self-start">ZAMÓW NEWSLETTER!</div>
+<div class="font-black text-white text-4xl leading-none w-full text-left mb-8">DOWIEDZ SIĘ<br>PIERWSZY O<br>NASZEJ OFERCIE.</div>
+<div class="flex w-full h-12">
+<input type="text" placeholder="WPISZ EMAIL" class="px-4 py-2 text-black text-sm font-bold w-2/3 outline-none rounded-l">
+<button class="bg-[#1b1c24] text-white px-4 py-2 text-sm font-bold w-1/3 rounded-r">ZAPISZ SIĘ</button>
+</div>
+</div>
+<div class="bg-[#e7f4ff] h-72 rounded flex flex-col items-center justify-center p-8 border border-blue-100 text-center">
+<div class="font-black text-[#6d8bba] text-3xl mb-4">PODATEK OD SERCA 1,5%</div>
+<div class="text-sm text-gray-700 mb-6 font-medium">Sprawdź apele pracowników Biedronki<br>o wsparcie dla nich oraz ich dzieci.<br>Przekaż 1,5% podatku.</div>
+<div class="w-32 h-24 bg-white border-2 border-gray-300 rounded flex items-center justify-center text-sm font-bold text-gray-400">PUZZLE</div>
+</div>
+</div>
+</div>
+
+</main>
+
+<footer class="w-full bg-[#1b1c24] text-white pt-16 mt-16">
+<div class="max-w-6xl mx-auto px-8 grid grid-cols-2 md:grid-cols-4 gap-x-4 md:gap-x-12 gap-y-10 mb-14 text-[11px] md:text-[13px] text-gray-300 relative z-10">
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-white mb-2 tracking-wide text-xs md:text-sm">INFORMACJE</h4>
+<a class="footer-link">Kontakt</a>
+<a class="footer-link">Regulaminy i zasady promocji</a>
+<a class="footer-link">Opakowania zwrotne po napojach</a>
+<a class="footer-link">Nasze sklepy</a>
+<a class="footer-link">FAQ - pytania i odpowiedzi</a>
+<a class="footer-link">Zwroty i reklamacje</a>
+<a class="footer-link">Regulamin Serwisu</a>
+<a class="footer-link">Polityka Prywatności</a>
+<a class="footer-link">Polityka Cookies</a>
+<a class="footer-link">Komunikaty dla klientów</a>
+<a class="footer-link">Komunikaty dla inwestorów</a>
+<a class="footer-link">Współpraca z producentami</a>
+<a class="footer-link">Klauzule RODO dla dostawców</a>
+<a class="footer-link leading-tight">Klauzule RODO Na codzienne<br>zakupy</a>
+<a class="footer-link">Standardy Ochrony Małoletnich</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-white mb-2 tracking-wide text-xs md:text-sm">OFERTA</h4>
+<a class="footer-link">Gazetki</a>
+<a class="footer-link">Newsletter</a>
+<a class="footer-link">Codziennie Niskie Ceny</a>
+<a class="footer-link">Okazje tygodnia</a>
+<a class="footer-link">Piwniczka Biedronki</a>
+<a class="footer-link">Dostawa</a>
+<a class="footer-link">Dada</a>
+<a class="footer-link">Moja Biedronka</a>
+<a class="footer-link">Tu Biedronka</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-white mb-2 tracking-wide text-xs md:text-sm">SZYBKIE LINKI</h4>
+<a class="footer-link">Aplikacja mobilna</a>
+<a class="footer-link">Karta Moja Biedronka</a>
+<a class="footer-link">Konkursy i akcje specjalne</a>
+<a class="footer-link">Nie marnujemy żywności</a>
+<a class="footer-link">Segreguj świadomie</a>
+<a class="footer-link">Jedz świadomie (Nutri-score)</a>
+<a class="footer-link">Przepisy</a>
+<a class="footer-link">Karty podarunkowe</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-white mb-2 tracking-wide text-xs md:text-sm">O BIEDRONCE</h4>
+<a class="footer-link">O nas</a>
+<a class="footer-link">Media</a>
+<a class="footer-link">Praca w Biedronce</a>
+<a class="footer-link leading-tight">Raport Zrównoważonego Rozwoju<br>Biedronki</a>
+<a class="footer-link">Zrównoważony rozwój w Biedronce</a>
+<a class="footer-link">Fundacja Biedronki</a>
+<a class="footer-link">Jakość Biedronki</a>
+<a class="footer-link">Nagrody</a>
+<a class="footer-link">Certyfikaty</a>
+<a class="footer-link">Projekty UE</a>
+<a class="footer-link">Zgłaszanie naruszeń</a>
+<a class="footer-link">KSeF</a>
+</div>
+</div>
+<div class="max-w-6xl mx-auto px-4 pb-14 flex flex-wrap justify-center gap-4 relative z-10">
+<div class="social-btn">fb</div>
+<div class="social-btn">yt</div>
+<div class="social-btn">tt</div>
+<div class="social-btn">ig</div>
+<div class="social-btn">pi</div>
+<div class="social-btn">wa</div>
+<div class="social-btn">ms</div>
+</div>
+<div class="w-full bg-[#24252e] py-8 relative z-10 border-t border-gray-700 text-[#8e8e93] text-[9px] md:text-[11px]">
+<div class="max-w-6xl mx-auto px-4 md:px-8 flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0 text-center md:text-left">
+<div>Copyright 2026 Jeronimo Martins Polska S.A.</div>
+<div>Serwis w wersji dla osób niewidomych i niedowidzących</div>
+<div>Autorzy: <a href="#" class="underline hover:text-white transition-colors">Isobar Poland</a></div>
+</div>
+</div>
+</footer>
+
+</body>
+</html>
